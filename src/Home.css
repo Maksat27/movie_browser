@@ -1,0 +1,65 @@
+.cover-container {
+  position: relative; 
+  width: 100%;
+  height: 597px; 
+  background-image: url(./img/iron-man-3-movie-poster.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cover-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(43,43,46);
+  background: linear-gradient(90deg, rgba(43,43,46,0.8652253137583158) 36%, rgba(145,11,11,0.5767099075958508) 100%);
+  z-index: 1; 
+}
+
+.content-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items: center;
+}
+
+.cover-container h1 {
+  flex: 1;
+  color: white;
+  position: relative; 
+  margin-left: 5rem;
+  z-index: 2; 
+}
+
+.cover-container p {
+  color: white;
+  position: relative; 
+  margin-right: 5rem;
+  margin-left: 5rem;
+  z-index: 2; 
+}
+
+.info-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  position: relative; 
+  margin-right: 5rem;
+  margin-left: 5rem;
+  z-index: 2; 
+}
+
+.vl {
+  border-left: 6px solid white;
+  height: 300px;
+  z-index: 2;
+}
